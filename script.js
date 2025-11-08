@@ -13,8 +13,17 @@ function addTask() {
     let value = input.value;
     if (value) {
         let task = document.createElement("div");
-        task.innerText = value;
+        let deleteBtn = document.createElement("button");
+        deleteBtn.innerText = "Delete";
+        deleteBtn.addEventListener("click",function(){
+             task.remove();
+        })
+        let text = document.createElement("span");
+        text.innerText = value;
+        task.appendChild(text);
+        task.appendChild(deleteBtn);
         container.appendChild(task);
+        task.classList.add("task");
         input.value = "";
     }  
 }

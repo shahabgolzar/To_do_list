@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #ffffffd4;
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
@@ -39,4 +39,26 @@ button:hover {
 }
 input{
     border-radius: 10px;
+}
+.task span {
+    margin-right: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+}
+.task {
+  margin: 10px 0; /* فاصله بین هر تسک از بالا و پایین */
+  display: flex; /* متن و دکمه در یک خط قرار بگیرن */
+  justify-content: space-between; /* یکی سمت چپ، یکی سمت راست */
+  
+}
+#task-input {
+  width: calc(100% - 90px); /* یعنی کل عرض صفحه منهای عرض دکمه */
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px; /* فاصله بین input و دکمه */
 }
