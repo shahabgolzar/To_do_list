@@ -25,16 +25,15 @@ button:hover {
     background-color: #6e6e6e;
 }
 #task-container div {
-    margin-top: 20px;
     text-align: right;
     background-color: #1e1e1e;
     padding: 10px;
-    margin: 5px 0;
+    margin: 8px 0;
     border-radius: 10px;
 }
 .input-area {
     display: flex;
-    justify-content:end;
+    justify-content:center;
     gap: 10px;
 }
 input{
@@ -45,7 +44,7 @@ input{
     font-size: 1.2em;
     color: #ffffff;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease opacity 0.3s ease;
 
 }
 .task {
@@ -61,4 +60,9 @@ input{
   border: none;
   border-radius: 8px;
   margin-right: 10px; /* فاصله بین input و دکمه */
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
 }

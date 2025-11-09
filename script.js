@@ -25,5 +25,9 @@ function addTask() {
         container.appendChild(task);
         task.classList.add("task");
         input.value = "";
+        task.addEventListener("click", function(){
+            if(event.target === deleteBtn) return;
+            text.classList.toggle("done");
+        })
     }  
 }
